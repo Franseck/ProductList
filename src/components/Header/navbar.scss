@@ -1,2 +1,35 @@
-@use "variables";
+@import "../../scss/variables";
 
+.contH1{
+margin-top: 5rem;
+text-align: center;
+padding: 0.5rem;
+
+h1{
+
+color: $October-4-hex;
+margin-bottom: 1rem;
+font-family: "Nothing You Could Do", cursive;
+
+}
+
+.contH2{
+display: flex;
+flex-wrap: wrap;
+justify-content: center;
+align-items: center;
+gap: 1rem;
+button {
+    padding: 1rem;
+    border-radius: 2rem;
+    border: none;
+    cursor: pointer;
+    text-transform: uppercase;
+    transition: all 1s ease;
+    &:hover{
+        background-color: $October-5-hex;
+        color: $October-4-hex;
+    }
+}
+}
+}

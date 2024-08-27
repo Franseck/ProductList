@@ -4,9 +4,13 @@ const ProductCard = ({ image, price, title }) => {
   return (
     <div>
       <div className="card">
-        <img width="200px" src={image} alt="" />
-        <h3>{price}</h3>
-        <p>{title}</p>
+        <div className="price">
+         <h3>{price}</h3>
+</div>
+        <img src={image} alt="" />
+       <div className="card-title">
+          <p>{title}</p>
+        </div>
       </div>
     </div>
   );

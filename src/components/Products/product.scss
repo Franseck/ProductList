@@ -1,3 +1,54 @@
-@import "variables";
+@import "../../scss/variables";
 
+.product-list {
+  margin: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  gap: 2rem;
+  font-family: "Nothing You Could Do", cursive;
 
+  .card {
+    width: 250px;
+    height: 350px;
+    position: relative;
+    overflow: hidden;
+    .price {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      background-color:darkslategrey;
+      color: bisque;
+      padding: 0.3rem;
+      transform: translate(-50%, -50%);
+      border-radius: 0.5rem;
+      z-index: 2;
+      opacity: 70%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+      filter: sepia(50%);
+    }
+    &:hover img {
+      filter: none;
+    }
+    .card-title {
+      padding: 1rem;
+      width: 100%;
+      position: absolute;
+      bottom: 0;
+      font-size: 1.2rem;
+      background-color: teal;
+      color: chocolate;
+      border-radius: 0.5rem;
+      font-size: 1rem;
+      transform: translateX(100%);
+      transition: transform 1s;
+    }
+    &:hover .card-title {
+      transform: translateX(0%);
+    }
+  }
+}
