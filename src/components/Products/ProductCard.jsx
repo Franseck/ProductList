@@ -8,8 +8,7 @@ const ProductCard = ({ image, price, title }) => {
   return (
     <div>
       <div className="card">
-            
-        <div className="price">
+                    <div className="price">
      <MdFavorite className={heart ? "heartRed": ""} size={30} onClick={handleFavorite} />
          <h3>{price}</h3>
 

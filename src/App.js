@@ -1,3 +1,4 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import "./scss/app.scss";
 import Header from "./components/Header/Header";
 import Product from "./components/Products/Product";
@@ -10,8 +11,8 @@ import {categories, products} from "./helper/data"
 function App() {
   return (
     <>
-<Header categories={categories}/>
-<Product products={products}/>
+
+<Product/>
 <Footer/>
     </>
 

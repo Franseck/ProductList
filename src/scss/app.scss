@@ -1,10 +1,25 @@
 @import "./reset";
 @import  "./variables";
-@import url('https://fonts.googleapis.com/css2?family=Rubik+Scribble&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Ultra&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Annie+Use+Your+Telescope&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Nothing+You+Could+Do&display=swap');
 
 
+
 body {
     background-color: $Teals-4;
-}
+ }
+.area{
+    font-family: "Nothing You Could Do", cursive;
+width: 10rem;
+    margin: 2rem;
+position: absolute;
+top: 0;
+right: 0;
+      display: flex;
+   text-align:  center;
+    justify-content: center;
+   align-items: center;
+   background-color: $October-4-hex;
+    border: 2px solid $October-1-hex;;
+  }
